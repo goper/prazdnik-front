@@ -1,3 +1,3 @@
-# Заглушка prazdnik.gpt-chat.by до запуска сайта поздравлений. Любой адрес — главная страница.
+# Статика prazdnik.gpt-chat.by. Несуществующий адрес — страница 404 сайта, а не ответ Apache.
 DirectoryIndex index.html
-ErrorDocument 404 /index.html
+ErrorDocument 404 /404.html

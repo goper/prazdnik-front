@@ -1,2 +1,10 @@
 User-agent: *
 Allow: /
+Disallow: /auth/
+Disallow: /payment-success/
+Disallow: /payment-cancel/
+Disallow: /zakaz/
+Disallow: /moi/
+Disallow: /v/
+
+Sitemap: https://prazdnik.gpt-chat.by/sitemap.xml
