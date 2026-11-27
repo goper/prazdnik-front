@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="600" viewBox="0 0 1800 600">
+  <!-- Устье трубы на clay-forest.webp находится в точке (1514, 90). -->
+  <style>
+    .puff { opacity: 0; animation: rise 10.5s linear infinite; }
+    .second { animation-delay: -3.5s; }
+    .third { animation-delay: -7s; }
+    @keyframes rise {
+      0%   { opacity: 0;   transform: translate(1514px, 90px) scale(.28); }
+      20%  { opacity: .52; transform: translate(1510px, 72px) rotate(-12deg) scale(.55); }
+      46%  { opacity: .58; transform: translate(1520px, 49px) rotate(6deg) scale(.86); }
+      72%  { opacity: .38; transform: translate(1540px, 29px) rotate(18deg) scale(1.18); }
+      100% { opacity: 0;   transform: translate(1574px, 6px) rotate(28deg) scale(1.58); }
+    }
+  </style>
+  <defs>
+    <radialGradient id="mist">
+      <stop stop-color="#eee0cc" stop-opacity=".92"/>
+      <stop offset=".45" stop-color="#ccc5bc" stop-opacity=".68"/>
+      <stop offset="1" stop-color="#b8b9b9" stop-opacity="0"/>
+    </radialGradient>
+    <g id="wisp" fill="url(#mist)">
+      <ellipse cx="-7" cy="3" rx="16" ry="9" transform="rotate(-20)"/>
+      <ellipse cx="7" cy="-4" rx="18" ry="11"/>
+    </g>
+  </defs>
+  <use class="puff" href="#wisp"/>
+  <use class="puff second" href="#wisp"/>
+  <use class="puff third" href="#wisp"/>
+</svg>
