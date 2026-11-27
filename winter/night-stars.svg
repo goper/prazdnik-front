@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="64" viewBox="0 0 560 64">
+  <!-- Звёзды ночного неба тёмной темы (assets/css/main.css): узкая полоса сразу под шапкой, над заголовком
+       страницы, повторяется по ширине. Ниже звёзд нет: они не должны попадать под текст.
+       Медовые, как над избушкой на clay-forest.webp; цвет — honey из plugins/vuetify.ts (в обеих темах одинаковый). -->
+  <polygon points="40.0,8.5 41.5,12.0 45.2,12.3 42.4,14.8 43.2,18.4 40.0,16.5 36.8,18.4 37.6,14.8 34.8,12.3 38.5,12.0" fill="#f7c674" opacity="0.7" stroke="#f7c674" stroke-width="1" stroke-linejoin="round"/>
+  <polygon points="196.0,36.4 197.0,38.7 199.4,38.9 197.5,40.5 198.1,42.9 196.0,41.6 193.9,42.9 194.5,40.5 192.6,38.9 195.0,38.7" fill="#f7c674" opacity="0.5" stroke="#f7c674" stroke-width="1" stroke-linejoin="round"/>
+  <polygon points="330.0,5.4 331.2,8.3 334.4,8.6 332.0,10.6 332.7,13.7 330.0,12.1 327.3,13.7 328.0,10.6 325.6,8.6 328.8,8.3" fill="#f7c674" opacity="0.65" stroke="#f7c674" stroke-width="1" stroke-linejoin="round"/>
+  <polygon points="470.0,28.5 471.5,32.0 475.2,32.3 472.4,34.8 473.2,38.4 470.0,36.5 466.8,38.4 467.6,34.8 464.8,32.3 468.5,32.0" fill="#f7c674" opacity="0.55" stroke="#f7c674" stroke-width="1" stroke-linejoin="round"/>
+  <polygon points="112.0,49.0 112.8,50.9 114.9,51.1 113.3,52.4 113.8,54.4 112.0,53.4 110.2,54.4 110.7,52.4 109.1,51.1 111.2,50.9" fill="#f7c674" opacity="0.35" stroke="#f7c674" stroke-width="1" stroke-linejoin="round"/>
+  <polygon points="402.0,53.0 402.8,54.9 404.9,55.1 403.3,56.4 403.8,58.4 402.0,57.4 400.2,58.4 400.7,56.4 399.1,55.1 401.2,54.9" fill="#f7c674" opacity="0.3" stroke="#f7c674" stroke-width="1" stroke-linejoin="round"/>
+  <polygon points="258.0,26.8 258.8,28.8 261.0,29.0 259.4,30.4 259.9,32.6 258.0,31.4 256.1,32.6 256.6,30.4 255.0,29.0 257.2,28.8" fill="#f7c674" opacity="0.4" stroke="#f7c674" stroke-width="1" stroke-linejoin="round"/>
+  <polygon points="530.0,8.8 530.8,10.8 533.0,11.0 531.4,12.4 531.9,14.6 530.0,13.4 528.1,14.6 528.6,12.4 527.0,11.0 529.2,10.8" fill="#f7c674" opacity="0.45" stroke="#f7c674" stroke-width="1" stroke-linejoin="round"/>
+</svg>
