@@ -1,28 +1,44 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1800" height="600" viewBox="0 0 1800 600">
   <!-- Устье трубы на clay-forest.webp находится в точке (1514, 90). -->
   <style>
-    .puff { opacity: 0; animation: rise 10.5s linear infinite; }
-    .second { animation-delay: -3.5s; }
-    .third { animation-delay: -7s; }
+    .puff { opacity: 0; animation: rise 8.4s linear infinite; }
+    .second { animation-delay: -2.8s; }
+    .third { animation-delay: -5.6s; }
     @keyframes rise {
-      0%   { opacity: 0;   transform: translate(1514px, 90px) scale(.28); }
-      20%  { opacity: .52; transform: translate(1510px, 72px) rotate(-12deg) scale(.55); }
-      46%  { opacity: .58; transform: translate(1520px, 49px) rotate(6deg) scale(.86); }
-      72%  { opacity: .38; transform: translate(1540px, 29px) rotate(18deg) scale(1.18); }
-      100% { opacity: 0;   transform: translate(1574px, 6px) rotate(28deg) scale(1.58); }
+      0%   { opacity: 0;   transform: translate(1515px, 88px) scale(.28); }
+      14%  { opacity: .90; transform: translate(1519px, 75px) rotate(-12deg) scale(.52); }
+      36%  { opacity: .90; transform: translate(1544px, 65px) rotate(-4deg) scale(.83); }
+      60%  { opacity: .76; transform: translate(1579px, 52px) rotate(8deg) scale(1.09); }
+      82%  { opacity: .50; transform: translate(1615px, 35px) rotate(16deg) scale(1.33); }
+      100% { opacity: 0;   transform: translate(1650px, 23px) rotate(23deg) scale(1.50); }
     }
   </style>
   <defs>
     <radialGradient id="mist">
-      <stop stop-color="#eee0cc" stop-opacity=".92"/>
-      <stop offset=".45" stop-color="#ccc5bc" stop-opacity=".68"/>
-      <stop offset="1" stop-color="#b8b9b9" stop-opacity="0"/>
+      <stop stop-color="#f3e6d5"/>
+      <stop offset=".5" stop-color="#dbd5cc" stop-opacity=".94"/>
+      <stop offset=".78" stop-color="#bebfc0" stop-opacity=".57"/>
+      <stop offset="1" stop-color="#b9bfc4" stop-opacity="0"/>
     </radialGradient>
+    <linearGradient id="trail" gradientUnits="userSpaceOnUse" x1="1514" y1="90" x2="1625" y2="38">
+      <stop stop-color="#e7d7c4" stop-opacity=".77"/>
+      <stop offset=".38" stop-color="#d4d1cc" stop-opacity=".56"/>
+      <stop offset="1" stop-color="#bac3c7" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soften" x="-.15" y="-.22" width="1.3" height="1.44">
+      <feGaussianBlur stdDeviation="2.6"/>
+    </filter>
     <g id="wisp" fill="url(#mist)">
-      <ellipse cx="-7" cy="3" rx="16" ry="9" transform="rotate(-20)"/>
-      <ellipse cx="7" cy="-4" rx="18" ry="11"/>
+      <ellipse cx="-10" cy="4" rx="22" ry="13" transform="rotate(-15)"/>
+      <ellipse cx="4" cy="-5" rx="19" ry="16"/>
+      <ellipse cx="16" cy="1" rx="21" ry="12"/>
     </g>
   </defs>
+  <path fill="url(#trail)" filter="url(#soften)"
+        d="M1511 90 C1507 75 1519 65 1534 60 S1555 60 1564 50
+           C1579 34 1592 44 1601 33 S1625 24 1635 22
+           C1622 31 1624 45 1607 50 S1588 67 1571 69
+           C1554 70 1553 78 1536 78 Q1521 79 1517 90 Z"/>
   <use class="puff" href="#wisp"/>
   <use class="puff second" href="#wisp"/>
   <use class="puff third" href="#wisp"/>
